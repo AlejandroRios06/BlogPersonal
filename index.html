@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Css/Destino-Estilos.css">
+</head>
+<body>
+    <!--BARRA DE NAVEGACION-->
+    <Header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span>AR</span>
+                </a>
+
+                <button class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="toogle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item text-light"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item text-light"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item text-light"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                        <li class="nav-item text-light"><a class="nav-link" href="#contactos">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </Header>
+
+    <!-- PAGINA PRINCIPAL-->
+
+    <main class="container-fluid d-flex justify-content-center align-items-center bg-dark vh-100">
+        <section class="w-75 mx-auto text-center vh-75">
+            <h2 class=" fs-3 text-light"> Hola, mi nombre es</h2>
+            <h1 class=" fs-1 fw-bold text-light"> ALEJANDRO RIOS</h1>
+        </section>
+
+    </main>
+
+    <!-- PORTFOLIO -->
+
+    <section class="container-fluid bg-dark py-5" id="portfolio">
+        <div class="container-fluid">
+            <h1 class="text-light text-center"> PROYECTOS </h1>
+            <div class="row w-75 mx-auto">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div>
+                        <img src="/imagenes/proyecto-img.jpg" alt="proyecto1">
+                    </div>
+                    <div>
+                        <h3 class="text-light fs-5 mt-4 px-4 pb-1"> Proyecto 1</h3>
+                        <p class="text-light px-4"> Desarrollo web</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div>
+                        <img src="/imagenes/proyecto-img.jpg" alt="proyecto2" width="180" height="160">
+                    </div>
+                    <div>
+                        <h3 class="text-light fs-5 mt-4 px-4 pb-1"> Proyecto 2</h3>
+                        <p class="text-light px-4"> Desarrollo web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI-->
+
+    <article class="container-fluid bg-dark py-5" id="sobre-mi">
+        <section class="row">
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center align-center">
+                <img src="imagenes/IMG_4031.jpg" class="d-block" alt="" width="350" height="500">
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center align-center">
+                <div class="container-fluid">
+                    <h1 class="text-light text-center"> Sobre Mí</h1>
+                    <p class="text-light text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas aliquam ab, veniam delectus assumenda eligendi. Iusto, enim? Reprehenderit, consequatur quaerat provident laboriosam dolore eum quidem? Reiciendis porro rem incidunt qui? </p>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <!-- CONTACTOS -->
+
+    <article class="container-fluid bg-dark" id="contactos">
+        <section class="container-fluid">
+            <h1 class="text-light text-center py-5"> CONTACTAME </h1>
+        </section>
+        
+        <form class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" required>
+        </form>
+        <form class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electronico" required>
+        </form>
+        <form class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu comentario..." required></textarea>
+        </form>
+        <form class="d-grid">
+            <button type="submit" class="btn btn-outline-primary">Enviar</button>
+        </form>
+    </article>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
